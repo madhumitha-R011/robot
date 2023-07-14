@@ -1,0 +1,341 @@
+body{
+    background-image: linear-gradient(yellow,rgb(73, 191, 73),rgb(70, 197, 209),greenyellow);
+}
+h1{
+    color:black;
+    text-align: center;
+    
+}
+.container{
+    height: 450px;
+    width: 700px;
+    border: 8px solid black;
+    margin: auto;
+    margin-top: 3%;
+}
+.face{
+    height:125px;
+    width: 150px;
+    background: rgb(33, 227, 214);
+    margin: auto;
+    margin-top: 20px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    /*transition: width 1s ease;*/
+}
+
+.container:hover .face
+{    
+    animation: face 3s infinite;
+}
+@keyframes face
+{
+    0%{
+        transform:translateX(10px);
+        border-radius: 50%;
+        background-color: rgb(46, 28, 238);
+    }
+    25%{
+        transform:translateY(-10px);
+    }
+    50%{
+        transform:translateX(-20px);
+        border-radius: 50%;
+    }
+    75%{
+        transform:translateY(10px);
+    }
+    100%{
+        transform:translateX(10px);
+    }
+}
+
+.eyes
+{
+    display: flex;
+    width: 150px;
+    justify-content: space-evenly;
+    padding-top: 55px;
+}
+.leye{
+    height: 25px;
+    width: 25px;
+    background: black;
+    border-radius: 50%;
+}
+.container:hover .leye{
+    animation: leye 1s infinite;
+
+}
+@keyframes leye
+{
+    0%
+    {
+        background: rgb(94, 28, 224);
+         border-radius: 50%;
+    }
+    25%
+    {
+        background-color:rgb(18, 18, 224);
+        border-radius: 50%;
+    }
+    50%
+    {
+        background-color: rgb(196, 18, 18);
+        border-radius: 50%;
+    }
+    75%
+    {
+        background-color: rgb(127, 243, 39);
+        border-radius: 50%;
+    }
+    100%
+    {
+        background-color: rgb(218, 32, 134);
+        border-radius: 50%;
+    }
+}
+
+.reye{
+    height: 25px;
+    width: 25px;
+    background: black;
+    border-radius: 50%;
+}
+.container:hover .reye{
+    animation: reye 1s infinite;
+
+}
+@keyframes reye
+{
+    0%
+    {
+        background: rgb(140, 24, 218);
+         border-radius: 50%;
+    }
+    25%
+    {
+        background-color: blue;
+        border-radius: 50%;
+    }
+    50%
+    {
+        background-color: brown;
+        border-radius: 50%;
+    }
+    75%
+    {
+        background-color: yellow;
+        border-radius: 50%;
+    }
+    100%
+    {
+        background-color: rgb(146, 11, 139);
+        border-radius: 50%;
+    }
+}
+.body{
+    display: flex;
+    width:250px;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 10px;
+}
+.lhand{
+    height: 85px;
+    width: 23px;
+    background-color: rgb(25, 222, 182);
+    border-radius: 20%;
+}
+.container:hover .lhand
+{ 
+        animation: lhand 2s infinite;
+}
+    @keyframes lhand
+    {
+        0%
+        {
+            transform: rotate(50deg);
+            transform-origin: top center;
+        }
+        25%
+        {
+            transform: rotate(-50deg);
+            transform-origin: top center;
+        }
+        50%
+        {
+            transform: rotate(50deg);
+            transform-origin: top center;
+        }
+        75%
+        {
+            transform: rotate(-50deg);
+            transform-origin: top center;
+        }
+        100%
+        {
+            transform: rotate(50deg);
+            transform-origin: top center;
+        }
+    }
+.center{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(22, 238, 220);
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius:30%;
+}
+.container:hover .center{
+    width:150px ;
+    animation: center 0.5s infinite;
+
+}
+@keyframes center
+{
+ 0%{
+   transform:rotate(360deg);
+   border-radius: 50%;
+   background-color: red;
+ }
+ 25%
+ {
+   transform:rotate(-360deg);
+   border-radius: 50%;
+ }
+ 50%
+ {
+   transform:rotate(-360deg);
+   border-radius: 50%;
+   background-color: blue;
+ }
+ 100%
+ {
+   transform: translateX(20px);
+   border-radius: 50%;
+ }
+}
+.rhand{
+    height: 85px;
+    width: 23px;
+    background-color: rgb(30, 221, 221);
+    border-radius: 20%;
+}
+
+.container:hover .rhand
+{ 
+        animation: rhand 2s infinite;
+}
+    @keyframes rhand
+    {
+        0%
+        {
+            transform: rotate(50deg);
+            transform-origin: top center;
+        }
+        25%
+        {
+            transform: rotate(-50deg);
+            transform-origin: top center;
+        }
+        50%
+        {
+            transform: rotate(50deg);
+            transform-origin: top center;
+        }
+        75%
+        {
+            transform: rotate(-50deg);
+            transform-origin: top center;
+        }
+        100%
+        {
+            transform: rotate(50deg);
+            transform-origin: top center;
+        }
+    }
+
+.legs{
+    display: flex;
+    width: 150px;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 10px;
+}
+.lleg{
+    height: 85px;
+    width: 23px;
+    background-color: rgb(55, 226, 215);
+    border-radius: 20%;
+}
+
+.container:hover .lleg
+{ 
+        animation: lleg 1s infinite;
+}
+    @keyframes lleg
+    {
+        0%
+        {
+            transform: rotate(50deg);
+            transform-origin: top center;
+        }
+        25%
+        {
+            transform: rotate(-50deg);
+            transform-origin: top center;
+        }
+        50%
+        {
+            transform: rotate(50deg);
+            transform-origin: top center;
+        }
+        75%
+        {
+            transform: rotate(-50deg);
+            transform-origin: top center;
+        }
+        100%
+        {
+            transform: rotate(50deg);
+            transform-origin: top center;
+        }
+    }
+.rleg{
+    height: 85px;
+    width: 23px;
+    background-color: rgb(46, 223, 214);
+    border-radius: 20%;
+}
+.container:hover .rleg
+{ 
+        animation: rleg 1s infinite;
+}
+    @keyframes rleg
+    {
+        0%
+        {
+            transform: rotate(50deg);
+            transform-origin: top center;
+        }
+        25%
+        {
+            transform: rotate(-50deg);
+            transform-origin: top center;
+        }
+        50%
+        {
+            transform: rotate(50deg);
+            transform-origin: top center;
+        }
+        75%
+        {
+            transform: rotate(-50deg);
+            transform-origin: top center;
+        }
+        100%
+        {
+            transform: rotate(50deg);
+            transform-origin: top center;
+        }
+    }
